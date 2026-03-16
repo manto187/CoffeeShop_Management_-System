@@ -48,3 +48,8 @@ Run the compiled executable:
 - `order_data.txt`: Maintains history of all customer sales.
 - `employee_data.txt`: Contains professional staff information.
 - `feedback_data.txt`: Stores qualitative customer reviews.
+
+## 🔑 Login Information
+When prompted for a login, use:
+- **ADMIN**: Access management tools.
+- **CUSTOMER**: Access ordering and loyalty features.
