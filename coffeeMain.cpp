@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <fstream>
+#include <ctime>
 using namespace std;
 
 const int MAX_ITEMS = 50;
@@ -54,6 +55,7 @@ void manageMenu();
 void viewOrders();
 void manageEmployees();
 void viewSalesReports();
+string getCurrentDate();
 
 // File handling functions
 void loadData();
@@ -351,7 +353,7 @@ void orderCoffee()
     orderCustomers[orderCount] = customerName;
     orderItems[orderCount] = itemsOrdered;
     orderTotals[orderCount] = total;
-    orderDates[orderCount] = "2025-05-26"; // You might want to use actual date here
+    orderDates[orderCount] = getCurrentDate(); 
     orderCount++;
 
     // Save order data to file immediately
@@ -786,6 +788,15 @@ void clearScreen()
     cout << "\nPress any key...";
     getch();
     system("cls");
+}
+
+string getCurrentDate()
+{
+    time_t now = time(0);
+    tm *ltm = localtime(&now);
+    char date[11];
+    sprintf(date, "%04d-%02d-%02d", 1900 + ltm->tm_year, 1 + ltm->tm_mon, ltm->tm_mday);
+    return string(date);
 }
 
 void customerMenu()
