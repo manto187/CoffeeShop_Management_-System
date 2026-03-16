@@ -43,3 +43,18 @@ Run the compiled executable:
 ```bash
 ./CoffeeShop.exe
 ```
+
+
+## 📁 Project Structure
+- `coffeeMain.cpp`: Core application logic and entry point.
+- `menu_data.txt`: Stores menu IDs, names, prices, and stock.
+- `order_data.txt`: Maintains history of all customer sales.
+- `employee_data.txt`: Contains professional staff information.
+- `feedback_data.txt`: Stores qualitative customer reviews.
+
+---
+
+## 🔑 Login Information
+When prompted for a login, use:
+- **ADMIN**: Access management tools.
+- **CUSTOMER**: Access ordering and loyalty features.
