@@ -22,3 +22,22 @@ A comprehensive, console-based Management System for coffee shops, designed to s
 - **Language**: C++
 - **Storage**: Persistent File-based system (`.txt` database files)
 - **Architecture**: Procedural with specialized modules for file handling and UI management.
+
+
+## 📥 Getting Started
+
+### Prerequisites
+- A C++ compiler (GCC, MinGW, Clang, or MSVC).
+- Windows OS (utilizes `conio.h` for input handling).
+
+### Compilation
+Open your terminal and run:
+```bash
+g++ coffeeMain.cpp -o CoffeeShop.exe
+```
+
+### Execution
+Run the compiled executable:
+```bash
+./CoffeeShop.exe
+```
