@@ -16,3 +16,9 @@ A comprehensive, console-based Management System for coffee shops, designed to s
 - **Sales Monitoring**: View all transaction history and total revenue reports.
 - **Employee Management**: Track staff IDs, positions, and salaries.
 - **Performance Analysis**: View most popular items and latest customer feedback.
+
+
+## 🛠️ Technical Stack
+- **Language**: C++
+- **Storage**: Persistent File-based system (`.txt` database files)
+- **Architecture**: Procedural with specialized modules for file handling and UI management.
